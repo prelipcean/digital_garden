@@ -12,4 +12,11 @@ workspace.json
 Thumbs.db
 
 # Obsidian Digital Garden Structure
-MyDigitalGarden
+MyDigitalGarden/000_Meta/*
+!MyDigitalGarden/000_Meta/001_Templates/
+MyDigitalGarden/100_Projects/*
+MyDigitalGarden/200_Areas_of_Interest/*
+MyDigitalGarden/300_Resources/*
+MyDigitalGarden/400_Fleeting_Notes/*
+MyDigitalGarden/900_Attachments/*
+MyDigitalGarden/999_Archive/*

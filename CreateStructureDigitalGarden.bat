@@ -20,6 +20,7 @@ mkdir "000_Meta\001_Templates\Debug_Session_Templates"
 mkdir "000_Meta\001_Templates\Security_Assessment_Templates"
 mkdir "000_Meta\001_Templates\Threat_Modeling_Templates"
 mkdir "000_Meta\001_Templates\Meeting_Notes_Templates"
+mkdir "000_Meta\001_Templates\Inbox_Templates"
 mkdir "000_Meta\002_Scripts"
 mkdir "000_Meta\002_Scripts\Automation_Scripts"
 mkdir "000_Meta\002_Scripts\Build_Scripts"
@@ -31,36 +32,121 @@ mkdir "000_Meta\004_Dashboards"
 mkdir "000_Meta\005_Inbox"
 
 rem Create MOC and template files in 000_Meta
-echo. > "000_Meta\001_Templates\_MOC_Templates.md"
-echo. > "000_Meta\001_Templates\Code_Review_Templates\Code_Review_Template.md"
-echo. > "000_Meta\001_Templates\Debug_Session_Templates\Debug_Session_Template.md"
-echo. > "000_Meta\001_Templates\Meeting_Notes_Templates\Meeting_Notes_Template.md"
-echo. > "000_Meta\001_Templates\Project_Templates\Project_Kickoff_Template.md"
-echo. > "000_Meta\001_Templates\Project_Templates\Project_Template.md"
-echo. > "000_Meta\001_Templates\Security_Assessment_Templates\Security_Assessment_Template.md"
-echo. > "000_Meta\001_Templates\Threat_Modeling_Templates\Threat_Modeling_Templates.md"
+if not exist "000_Meta\001_Templates\_MOC_Templates.md" (
+    echo Creating MOC template file...
+    echo. > "000_Meta\001_Templates\_MOC_Templates.md"
+)
 
-echo. > "000_Meta\002_Scripts\_MOC_Scripts.md"
+if not exist "000_Meta\001_Templates\Code_Review_Templates\Code_Review_Template.md" (
+    echo Creating Code Review template file...
+    echo. > "000_Meta\001_Templates\Code_Review_Templates\Code_Review_Template.md"
+)
 
-echo. > "000_Meta\003_Maps_of_Content\_MOC_Maps.md"
-echo. > "000_Meta\003_Maps_of_Content\Content_Map.md"
-echo. > "000_Meta\003_Maps_of_Content\Learning_Paths.md"
-echo. > "000_Meta\003_Maps_of_Content\Career_Roadmap.md"
-echo. > "000_Meta\003_Maps_of_Content\Security_Roadmap.md"
-echo. > "000_Meta\003_Maps_of_Content\Technology_Stack_Map.md"
+if not exist "000_Meta\001_Templates\Debug_Session_Templates\Debug_Session_Template.md" (
+    echo Creating Debug Session template file...
+    echo. > "000_Meta\001_Templates\Debug_Session_Templates\Debug_Session_Template.md"
+)
 
-echo. > "000_Meta\004_Dashboards\_MOC_Dashboards.md"
-echo. > "000_Meta\004_Dashboards\Current_Projects_Dashboard.md"
-echo. > "000_Meta\004_Dashboards\Skills_Progress_Dashboard.md"
-echo. > "000_Meta\004_Dashboards\Security_Metrics_Dashboard.md"
-echo. > "000_Meta\004_Dashboards\Certification_Tracker.md"
+if not exist "000_Meta\001_Templates\Meeting_Notes_Templates\Meeting_Notes_Template.md" (
+    echo Creating Meeting Notes template file...
+    echo. > "000_Meta\001_Templates\Meeting_Notes_Templates\Meeting_Notes_Template.md"
+)
 
-echo. > "000_Meta\005_Inbox\_README_Inbox_Processing.md"
+if not exist "000_Meta\001_Templates\Project_Templates\Project_Kickoff_Template.md" (
+    echo Creating Project Kickoff template file...
+    echo. > "000_Meta\001_Templates\Project_Templates\Project_Kickoff_Template.md"
+)
+
+if not exist "000_Meta\001_Templates\Project_Templates\Project_Template.md" (
+    echo Creating Project template file...
+    echo. > "000_Meta\001_Templates\Project_Templates\Project_Template.md"
+)
+
+if not exist "000_Meta\001_Templates\Security_Assessment_Templates\Security_Assessment_Template.md" (
+    echo Creating Security Assessment template file...
+    echo. > "000_Meta\001_Templates\Security_Assessment_Templates\Security_Assessment_Template.md"
+)
+
+if not exist "000_Meta\001_Templates\Threat_Modeling_Templates\Threat_Modeling_Templates.md" (
+    echo Creating Threat Modeling template file...
+    echo. > "000_Meta\001_Templates\Threat_Modeling_Templates\Threat_Modeling_Templates.md"
+)
+
+if not exist "000_Meta\001_Templates\Inbox_Templates\Inbox_Template.md" (
+    echo Creating Inbox template file...
+    echo. > "000_Meta\001_Templates\Inbox_Templates\Inbox_Template.md"
+)
+
+if not exist "000_Meta\002_Scripts\_MOC_Scripts.md" (
+    echo Creating MOC Scripts file...
+    echo. > "000_Meta\002_Scripts\_MOC_Scripts.md"
+)
+
+if not exist "000_Meta\003_Maps_of_Content\_MOC_Maps.md" (
+    echo Creating MOC Maps file...
+    echo. > "000_Meta\003_Maps_of_Content\_MOC_Maps.md"
+)
+
+if not exist "000_Meta\003_Maps_of_Content\Content_Map.md" (
+    echo Creating Content Map file...
+    echo. > "000_Meta\003_Maps_of_Content\Content_Map.md"
+)
+
+if not exist "000_Meta\003_Maps_of_Content\Learning_Paths.md" (
+    echo Creating Learning Paths file...
+    echo. > "000_Meta\003_Maps_of_Content\Learning_Paths.md"
+)
+
+if not exist "000_Meta\003_Maps_of_Content\Career_Roadmap.md" (
+    echo Creating Career Roadmap file...
+    echo. > "000_Meta\003_Maps_of_Content\Career_Roadmap.md"
+)
+if not exist "000_Meta\003_Maps_of_Content\Security_Roadmap.md" (
+    echo Creating Security Roadmap file...
+    echo. > "000_Meta\003_Maps_of_Content\Security_Roadmap.md"
+)
+if not exist "000_Meta\003_Maps_of_Content\Technology_Stack_Map.md" (
+    echo Creating Technology Stack Map file...
+    echo. > "000_Meta\003_Maps_of_Content\Technology_Stack_Map.md"
+)
+
+if not exist "000_Meta\004_Dashboards\_MOC_Dashboards.md" (
+    echo Creating MOC Dashboards file...
+    echo. > "000_Meta\004_Dashboards\_MOC_Dashboards.md"
+)
+
+if not exist "000_Meta\004_Dashboards\Current_Projects_Dashboard.md" (
+    echo Creating Current Projects Dashboard file...
+    echo. > "000_Meta\004_Dashboards\Current_Projects_Dashboard.md"
+)
+
+if not exist "000_Meta\004_Dashboards\Skills_Progress_Dashboard.md" (
+    echo Creating Skills Progress Dashboard file...
+    echo. > "000_Meta\004_Dashboards\Skills_Progress_Dashboard.md"
+)
+
+if not exist "000_Meta\004_Dashboards\Security_Metrics_Dashboard.md" (
+    echo Creating Security Metrics Dashboard file...
+    echo. > "000_Meta\004_Dashboards\Security_Metrics_Dashboard.md"
+)
+
+if not exist "000_Meta\004_Dashboards\Certification_Tracker.md" (
+    echo Creating Certification Tracker file...
+    echo. > "000_Meta\004_Dashboards\Certification_Tracker.md"
+)
+
+if not exist "000_Meta\005_Inbox\_README_Inbox.md" (
+    echo Creating README Inbox file...
+    echo. > "000_Meta\005_Inbox\_README_Inbox.md"
+)
 
 rem 100_Projects
 mkdir "100_Projects"
 
-echo. > "100_Projects\_MOC_Projects.md"
+if not exist "100_Projects\_MOC_Projects.md" (
+    echo Creating MOC Projects file...
+    echo. > "100_Projects\_MOC_Projects.md"
+)
 
 mkdir "100_Projects\101_Current"
 mkdir "100_Projects\101_Current\Automotive_Projects"
@@ -77,7 +163,10 @@ mkdir "100_Projects\103_Archive\By_Technology"
 rem 200_Areas_of_Interest
 mkdir "200_Areas_of_Interest"
 
-echo. > "200_Areas_of_Interest\_MOC_Areas_of_Interest.md"
+if not exist "200_Areas_of_Interest\_MOC_Areas_of_Interest.md" (
+    echo Creating MOC Areas of Interest file...
+    echo. > "200_Areas_of_Interest\_MOC_Areas_of_Interest.md"
+)
 
 mkdir "200_Areas_of_Interest\201_Programming_Languages"
 mkdir "200_Areas_of_Interest\201_Programming_Languages\C"
@@ -364,7 +453,10 @@ mkdir "200_Areas_of_Interest\226_Systems_Infrastructure\Databases"
 rem 300_Resources
 mkdir "300_Resources"
 
-echo. > "300_Resources\_MOC_Resources.md"
+if not exist "300_Resources\_MOC_Resources.md" (
+    echo Creating MOC Resources file...
+    echo. > "300_Resources\_MOC_Resources.md"
+)
 
 mkdir "300_Resources\301_Books"
 mkdir "300_Resources\301_Books\Embedded_Systems"
@@ -399,7 +491,10 @@ mkdir "300_Resources\314_Communities\Local_Groups"
 rem 400_Fleeting_Notes
 mkdir "400_Fleeting_Notes"
 
-echo. > "400_Fleeting_Notes\_MOC_Fleeting_Notes.md"
+if not exist "400_Fleeting_Notes\_MOC_Fleeting_Notes.md" (
+    echo Creating MOC Fleeting Notes file...
+    echo. > "400_Fleeting_Notes\_MOC_Fleeting_Notes.md"
+)
 
 mkdir "400_Fleeting_Notes\401_Inbox"
 mkdir "400_Fleeting_Notes\402_Daily"
@@ -413,7 +508,10 @@ mkdir "400_Fleeting_Notes\407_Archive\2025"
 rem 900_Attachments
 mkdir "900_Attachments"
 
-echo. > "900_Attachments\_MOC_Attachments.md"
+if not exist "900_Attachments\_MOC_Attachments.md" (
+    echo Creating MOC Attachments file...
+    echo. > "900_Attachments\_MOC_Attachments.md"
+)
 
 mkdir "900_Attachments\901_Images"
 mkdir "900_Attachments\901_Images\Screenshots"
@@ -439,7 +537,11 @@ mkdir "900_Attachments\905_Excalidraw\Schematics"
 
 rem 998_Plugins_Settings
 mkdir "998_Plugins_Settings"
-echo. > "998_Plugins_Settings\_MOC_Plugins_Settings.md"
+
+if not exist "998_Plugins_Settings\_MOC_Plugins_Settings.md" (
+    echo Creating MOC Plugins Settings file...
+    echo. > "998_Plugins_Settings\_MOC_Plugins_Settings.md"
+)
 
 rem 999_Archive
 mkdir "999_Archive"
