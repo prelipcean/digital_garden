@@ -1,0 +1,15 @@
+.obsidian/
+.vscode/
+node_modules/
+attachments/
+workspace.json
+.cache/
+*.tmp
+*.log
+*.bak
+~$*
+.DS_Store
+Thumbs.db
+
+# Obsidian Digital Garden Structure
+MyDigitalGarden

@@ -32,29 +32,36 @@ mkdir "000_Meta\005_Inbox"
 
 rem Create MOC and template files in 000_Meta
 echo. > "000_Meta\001_Templates\_MOC_Templates.md"
-echo. > "000_Meta\001_Templates\Code_Review_Template.md"
-echo. > "000_Meta\001_Templates\Debug_Session_Template.md"
-echo. > "000_Meta\001_Templates\Meeting_Notes_Template.md"
-echo. > "000_Meta\001_Templates\Project_Kickoff_Template.md"
-echo. > "000_Meta\001_Templates\Security_Assessment_Template.md"
+echo. > "000_Meta\001_Templates\Code_Review_Templates\Code_Review_Template.md"
+echo. > "000_Meta\001_Templates\Debug_Session_Templates\Debug_Session_Template.md"
+echo. > "000_Meta\001_Templates\Meeting_Notes_Templates\Meeting_Notes_Template.md"
+echo. > "000_Meta\001_Templates\Project_Templates\Project_Kickoff_Template.md"
+echo. > "000_Meta\001_Templates\Project_Templates\Project_Template.md"
+echo. > "000_Meta\001_Templates\Security_Assessment_Templates\Security_Assessment_Template.md"
+echo. > "000_Meta\001_Templates\Threat_Modeling_Templates\Threat_Modeling_Templates.md"
 
 echo. > "000_Meta\002_Scripts\_MOC_Scripts.md"
 
 echo. > "000_Meta\003_Maps_of_Content\_MOC_Maps.md"
-echo. > "000_Meta\003_Maps_of_Content\Career_Roadmap.md"
 echo. > "000_Meta\003_Maps_of_Content\Content_Map.md"
 echo. > "000_Meta\003_Maps_of_Content\Learning_Paths.md"
+echo. > "000_Meta\003_Maps_of_Content\Career_Roadmap.md"
+echo. > "000_Meta\003_Maps_of_Content\Security_Roadmap.md"
 echo. > "000_Meta\003_Maps_of_Content\Technology_Stack_Map.md"
 
-echo. > "000_Meta\004_Dashboards\_README_Dataview_Setup.md"
-echo. > "000_Meta\004_Dashboards\Certification_Tracker.md"
+echo. > "000_Meta\004_Dashboards\_MOC_Dashboards.md"
 echo. > "000_Meta\004_Dashboards\Current_Projects_Dashboard.md"
 echo. > "000_Meta\004_Dashboards\Skills_Progress_Dashboard.md"
+echo. > "000_Meta\004_Dashboards\Security_Metrics_Dashboard.md"
+echo. > "000_Meta\004_Dashboards\Certification_Tracker.md"
 
 echo. > "000_Meta\005_Inbox\_README_Inbox_Processing.md"
 
 rem 100_Projects
 mkdir "100_Projects"
+
+echo. > "100_Projects\_MOC_Projects.md"
+
 mkdir "100_Projects\101_Current"
 mkdir "100_Projects\101_Current\Automotive_Projects"
 mkdir "100_Projects\101_Current\Embedded_Projects"
@@ -69,6 +76,9 @@ mkdir "100_Projects\103_Archive\By_Technology"
 
 rem 200_Areas_of_Interest
 mkdir "200_Areas_of_Interest"
+
+echo. > "200_Areas_of_Interest\_MOC_Areas_of_Interest.md"
+
 mkdir "200_Areas_of_Interest\201_Programming_Languages"
 mkdir "200_Areas_of_Interest\201_Programming_Languages\C"
 mkdir "200_Areas_of_Interest\201_Programming_Languages\C\MISRA_Standards"
@@ -344,12 +354,18 @@ mkdir "200_Areas_of_Interest\225_Electronics_Troubleshooting\Repair_Techniques\D
 rem 226_Systems_Infrastructure
 mkdir "200_Areas_of_Interest\226_Systems_Infrastructure"
 mkdir "200_Areas_of_Interest\226_Systems_Infrastructure\Linux"
+mkdir "200_Areas_of_Interest\226_Systems_Infrastructure\Windows"
+mkdir "200_Areas_of_Interest\226_Systems_Infrastructure\MacOS"
+mkdir "200_Areas_of_Interest\226_Systems_Infrastructure\Dual_Boot"
 mkdir "200_Areas_of_Interest\226_Systems_Infrastructure\Networking"
 mkdir "200_Areas_of_Interest\226_Systems_Infrastructure\Cloud_Services"
 mkdir "200_Areas_of_Interest\226_Systems_Infrastructure\Databases"
 
 rem 300_Resources
 mkdir "300_Resources"
+
+echo. > "300_Resources\_MOC_Resources.md"
+
 mkdir "300_Resources\301_Books"
 mkdir "300_Resources\301_Books\Embedded_Systems"
 mkdir "300_Resources\301_Books\Automotive_Standards"
@@ -382,6 +398,9 @@ mkdir "300_Resources\314_Communities\Local_Groups"
 
 rem 400_Fleeting_Notes
 mkdir "400_Fleeting_Notes"
+
+echo. > "400_Fleeting_Notes\_MOC_Fleeting_Notes.md"
+
 mkdir "400_Fleeting_Notes\401_Inbox"
 mkdir "400_Fleeting_Notes\402_Daily"
 mkdir "400_Fleeting_Notes\403_Weekly"
@@ -393,6 +412,9 @@ mkdir "400_Fleeting_Notes\407_Archive\2025"
 
 rem 900_Attachments
 mkdir "900_Attachments"
+
+echo. > "900_Attachments\_MOC_Attachments.md"
+
 mkdir "900_Attachments\901_Images"
 mkdir "900_Attachments\901_Images\Screenshots"
 mkdir "900_Attachments\901_Images\Diagrams"
@@ -415,19 +437,12 @@ mkdir "900_Attachments\905_Excalidraw\Flowcharts"
 mkdir "900_Attachments\905_Excalidraw\Security_Diagrams"
 mkdir "900_Attachments\905_Excalidraw\Schematics"
 
-echo # Vault Index > "000_Meta\003_Maps_of_Content\Vault_Index.md"
+rem 998_Plugins_Settings
+mkdir "998_Plugins_Settings"
+echo. > "998_Plugins_Settings\_MOC_Plugins_Settings.md"
 
-rem Maps and Dashboards placeholder files
-echo. > "000_Meta\003_Maps_of_Content\Content_Map.md"
-echo. > "000_Meta\003_Maps_of_Content\Learning_Paths.md"
-echo. > "000_Meta\003_Maps_of_Content\Career_Roadmap.md"
-echo. > "000_Meta\003_Maps_of_Content\Security_Roadmap.md"
-echo. > "000_Meta\003_Maps_of_Content\Technology_Stack_Map.md"
-
-echo. > "000_Meta\004_Dashboards\Current_Projects_Dashboard.md"
-echo. > "000_Meta\004_Dashboards\Skills_Progress_Dashboard.md"
-echo. > "000_Meta\004_Dashboards\Security_Metrics_Dashboard.md"
-echo. > "000_Meta\004_Dashboards\Certification_Tracker.md"
+rem 999_Archive
+mkdir "999_Archive"
 
 echo.
 echo Folder structure and files created successfully in "%VAULT_NAME%".
