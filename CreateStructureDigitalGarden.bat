@@ -29,7 +29,6 @@ mkdir "000_Meta\002_Scripts\Security_Scanning_Scripts"
 mkdir "000_Meta\002_Scripts\Vulnerability_Assessment_Scripts"
 mkdir "000_Meta\003_Maps_of_Content"
 mkdir "000_Meta\004_Dashboards"
-mkdir "000_Meta\005_Inbox"
 
 rem Create MOC and template files in 000_Meta
 if not exist "000_Meta\001_Templates\_MOC_Templates.md" (
@@ -133,11 +132,6 @@ if not exist "000_Meta\004_Dashboards\Security_Metrics_Dashboard.md" (
 if not exist "000_Meta\004_Dashboards\Certification_Tracker.md" (
     echo Creating Certification Tracker file...
     echo. > "000_Meta\004_Dashboards\Certification_Tracker.md"
-)
-
-if not exist "000_Meta\005_Inbox\_README_Inbox.md" (
-    echo Creating README Inbox file...
-    echo. > "000_Meta\005_Inbox\_README_Inbox.md"
 )
 
 rem 100_Projects
